@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float pesoSaco, racaoGato;
+    float pesoSacoGramas, racaoTotal, restante;
+
+    printf("Digite o peso do saco de racao em kg: ");
+    scanf("%f", &pesoSaco);
+
+    printf("Digite a quantidade de racao para cada gato em gramas: ");
+    scanf("%f", &racaoGato);
+
+    pesoSacoGramas = pesoSaco * 1000;
+
+    racaoTotal = racaoGato * 2 * 5;
+
+    restante = pesoSacoGramas - racaoTotal;
+
+    printf("Restara %.2f gramas de racao no saco.\n", restante);
+
+    return 0;
+}
