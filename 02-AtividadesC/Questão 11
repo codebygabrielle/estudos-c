@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float numero;
+    float quadrado, cubo, raizQuadrada, raizCubica;
+
+    printf("Digite um numero positivo maior que zero: ");
+    scanf("%f", &numero);
+
+    quadrado = numero * numero;
+    cubo = numero * numero * numero;
+    raizQuadrada = sqrt(numero);
+    raizCubica = cbrt(numero);
+
+    printf("a) O numero ao quadrado: %.2f\n", quadrado);
+    printf("b) O numero ao cubo: %.2f\n", cubo);
+    printf("c) A raiz quadrada: %.2f\n", raizQuadrada);
+    printf("d) A raiz cubica: %.2f\n", raizCubica);
+
+    return 0;
+}
